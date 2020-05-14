@@ -37,9 +37,7 @@ class Score extends Component {
     return (
       <>
         {students.map((d, idx) => {
-
-          console.log(this.d.scores[1].date)
-         
+          console.log(d.scores[idx])
           return (
             <>
               <li key={idx}>
