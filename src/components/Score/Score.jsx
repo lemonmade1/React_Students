@@ -37,11 +37,15 @@ class Score extends Component {
     return (
       <>
         {students.map((d, idx) => {
-          console.log(d.scores[idx])
+
+          // console.log(d.scores[d.date])
+          console.log(d["scores"][1]["score"])
+          
           return (
             <>
               <li key={idx}>
-                {/* {d.scores[this.date]} */}
+                scores: {d["scores"][1]["score"]} <br/>
+                date: {d["scores"][1]["date"]}
                 {/* {d.scores[idx]} */}
               </li>
             </>
