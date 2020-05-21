@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Score from '../Score/Score'
+
 class Student extends Component {
   render() {
 
@@ -41,6 +43,7 @@ class Student extends Component {
             <>
               <h1 key={idx}>{d.name}</h1>
               <p>{d.bio}</p>
+              <Score scores={d.scores} />
             </>
           )
         })}
