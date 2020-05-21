@@ -1,21 +1,25 @@
 import React, { Component } from 'react';
 
+import './Score.css';
+
 class Score extends Component {
   render() {
 
     return (
       <>
-        {this.props.scores.map((d, idx) => {
-          
-          return (
-            <>
-              <li key={idx}>
-                scores: {d["score"]} <br/>
-                date: {d["date"]}
-              </li>
-            </>
-          )
-        })}
+        <ul className="scoreUl">
+          {this.props.scores.map((d, idx) => {
+
+            return (
+              <>
+                <li key={idx}>
+                 <p>Scores: {d["score"]} <span id='dateSpan'>Date: {d["date"]}</span></p>  
+                 
+                </li>
+              </>
+            )
+          })}
+        </ul>
       </>
     );
   }

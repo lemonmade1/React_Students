@@ -1,0 +1,12 @@
+ul {
+  display: flex;
+  flex-flow: column;
+}
+
+li {
+  list-style: none;
+}
+
+#dateSpan {
+  margin-left: 1em;
+}
